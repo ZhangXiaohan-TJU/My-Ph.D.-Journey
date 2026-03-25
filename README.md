@@ -10,9 +10,9 @@
 7. Wang H, Wang C, Liu Q, **Zhang X**, et al. [A data and knowledge driven autonomous intelligent manufacturing system for intelligent factories](https://www.sciencedirect.com/science/article/pii/S0278612524000785)[J]. _Journal of Manufacturing Systems_, 2024, 74: 512-526.
 8. Zuo L, Wang H, **Zhang X**, et al.<font style="color:rgb(34, 34, 34);"> </font>[Channel-Time Attention Based Patch-Attribute Alignment for Zero-Shot Fault Diagnosis](https://ieeexplore.ieee.org/document/10831666)[C]//_2024 IEEE International Conference on Systems, Man, and Cybernetics_ _(SMC)_. IEEE, 2024: 5137-5142.
 
-### 1.2<font style="color:#333333;background-color:#FFFFFF;">申请专利</font>
-1. **<font style="color:#333333;background-color:#FFFFFF;">张笑寒</font>**<font style="color:#333333;background-color:#FFFFFF;">, 刘敏, 徐高威. 数据与机理融合的工控多模态生成式预训练模型构建方法: 上海市, CN118940108A[P]. 2024-11-12</font>
-2. **<font style="color:#333333;background-color:#FFFFFF;">张笑寒</font>**<font style="color:#333333;background-color:#FFFFFF;">, 徐高威, 刘敏. 基于低秩适应和token剪枝的复杂动态系统多任务模型微调方法: 上海市, CN118643876A[P]. 2024-09-13</font>
+### 1.2 申请专利
+1. **张笑寒**, 刘敏, 徐高威. 数据与机理融合的工控多模态生成式预训练模型构建方法: 上海市, CN118940108A[P]. 2024-11-12
+2. **张笑寒**, 徐高威, 刘敏. 基于低秩适应和token剪枝的复杂动态系统多任务模型微调方法: 上海市, CN118643876A[P]. 2024-09-13
 
 ## 二、做实验&写论文遇到的一些问题
 ### 2.1 torch版本-cuda版本-驱动版本对应问题
