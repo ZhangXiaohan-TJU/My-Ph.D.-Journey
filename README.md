@@ -6,8 +6,11 @@
   - [1.2 申请专利](#12-申请专利)
 - [二、做实验&写论文遇到的一些问题](#二做实验写论文遇到的一些问题)
   - [2.1 torch版本-cuda版本-驱动版本对应问题](#21-torch版本-cuda版本-驱动版本对应问题)
-  - [2.2 同样的latex项目，在不同电脑上编译出来结果不同](#22-同样的latex项目在不同电脑上编译出来结果不同)
-  - [2.3 VSCode最新版本无法连接SSH服务器](#23-vscode最新版本无法连接ssh服务器)
+  - [2.2 同样的LaTex项目，在不同电脑上编译出来结果不同](#22-同样的latex项目在不同电脑上编译出来结果不同)
+  - [2.3 VSCode更改LaTex编译输出路径后，执行bibtex命令会报错](#23-vscode更改latex编译输出路径后执行bibtex命令会报错)
+  - [2.4 论文投稿相关总结](#24-论文投稿相关总结)
+  - [2.5 Pycharm与VSCode对比](#25-pycharm与vscode对比)
+  - [2.6 VSCode最新版本无法连接SSH服务器](#26-vscode最新版本无法连接ssh服务器)
 ## 一、我的成果
 ### 1.1 已发表论文
 1. **Zhang X**, Wang H, Wang C, et al. [MoMD Transformer: adaptive multi-modal fault diagnosis via knowledge transfer with vibration-current signals](https://www.sciencedirect.com/science/article/pii/S1566253525011418)[J/OL]. _Information Fusion_, 2026, 130: 104079. （SCI中科院1区TOP，IF=15.5）
@@ -27,7 +30,7 @@
 ### 2.1 torch版本-cuda版本-驱动版本对应问题
 25年秋季学期，因为某些现在已想不起来的原因想要使用高版本的torch，发现实验室服务器的cuda版本太低不支持，尝试升级cuda版本，又发现新的cuda版本和显卡驱动版本也不匹配，服务器一度崩溃，经过n次的重置环境变量，以及重启主机，得以修复。再也不敢轻易升级服务器一些软件的版本。
 
-### 2.2 同样的latex项目，在不同电脑上编译出来结果不同
+### 2.2 同样的LaTex项目，在不同电脑上编译出来结果不同
 主要体现在参考文献的字体大小不一致（对比如下图），经Gemini的分析得知，这和texlive的版本有关。而latex可以在线选择不同版本的texlive进行编译，发现最新的texlive 2025会把参考文献字体编译的特别大，之后统一了两台电脑的texlive版本，问题解决。
 
 <img src="https://cdn.nlark.com/yuque/0/2026/png/63764939/1774405232179-204bb1fa-59d9-4c84-b6ea-326a6fbed2a6.png" width="344" title="" crop="0,0,1,1" id="W4xBw" class="ne-image"><img src="https://cdn.nlark.com/yuque/0/2026/png/63764939/1774405277966-4fd43fc1-9e39-4927-8314-a9063573158a.png" width="336" title="" crop="0,0,1,1" id="ue8cbc721" class="ne-image">
