@@ -1,16 +1,21 @@
 # My-Ph.D.-Journey
 此库总结了本人在博士科研过程中取得的成果以及遇到过的一些问题。
 ## 目录
-- [一、我的成果](#一我的成果)
-  - [1.1 已发表论文](#11-已发表论文)
-  - [1.2 申请专利](#12-申请专利)
-- [二、做实验&写论文遇到的一些问题](#二做实验写论文遇到的一些问题)
-  - [2.1 torch版本-cuda版本-驱动版本对应问题](#21-torch版本-cuda版本-驱动版本对应问题)
-  - [2.2 同样的LaTex项目，在不同电脑上编译出来结果不同](#22-同样的latex项目在不同电脑上编译出来结果不同)
-  - [2.3 VSCode更改LaTex编译输出路径后，执行bibtex命令会报错](#23-vscode更改latex编译输出路径后执行bibtex命令会报错)
-  - [2.4 论文投稿相关总结](#24-论文投稿相关总结)
-  - [2.5 Pycharm与VSCode对比](#25-pycharm与vscode对比)
-  - [2.6 VSCode最新版本无法连接SSH服务器](#26-vscode最新版本无法连接ssh服务器)
+- [My-Ph.D.-Journey](#my-phd-journey)
+  - [目录](#目录)
+  - [一、我的成果](#一我的成果)
+    - [1.1 已发表论文](#11-已发表论文)
+    - [1.2 申请专利](#12-申请专利)
+  - [二、做实验\&写论文遇到的一些问题](#二做实验写论文遇到的一些问题)
+    - [2.1 torch版本-cuda版本-驱动版本对应问题](#21-torch版本-cuda版本-驱动版本对应问题)
+    - [2.2 同样的LaTex项目，在不同电脑上编译出来结果不同](#22-同样的latex项目在不同电脑上编译出来结果不同)
+    - [2.3 VSCode更改LaTex编译输出路径后，执行bibtex命令会报错](#23-vscode更改latex编译输出路径后执行bibtex命令会报错)
+    - [2.4 VSCode安装语法检查插件LTeX相关问题](#24-vscode安装语法检查插件ltex相关问题)
+    - [2.5 LaTex项目文件组成](#25-latex项目文件组成)
+    - [2.6 论文投稿相关总结](#26-论文投稿相关总结)
+    - [2.7 Pycharm与VSCode对比](#27-pycharm与vscode对比)
+    - [2.8 VSCode最新版本无法连接SSH服务器](#28-vscode最新版本无法连接ssh服务器)
+
 ## 一、我的成果
 ### 1.1 已发表论文
 1. **Zhang X**, Wang H, Wang C, et al. [MoMD Transformer: adaptive multi-modal fault diagnosis via knowledge transfer with vibration-current signals](https://www.sciencedirect.com/science/article/pii/S1566253525011418)[J/OL]. _Information Fusion_, 2026, 130: 104079. （SCI中科院1区TOP，IF=15.5）
@@ -38,7 +43,15 @@
 ### 2.3 VSCode更改LaTex编译输出路径后，执行bibtex命令会报错
 为了LaTex项目文件夹的整洁与管理方便，选择更改默认设置（[VsCode配置Latex编译环境并且指定输出目录_latex编译输出-CSDN博客](https://blog.csdn.net/lyxichigoichie/article/details/125961850?spm=1001.2014.3001.5506)），编译时将中间文件输出都到"./Build"文件夹，但是有关bibtex的执行都会报错，最终上网寻找到解决方案：[bibtex因openout_any=p拒绝编译](https://hyliang96.github.io/posts/b812214a/#:~:text=%E8%8B%A5%E7%BC%96%E8%AF%91%E6%97%B6,%E4%BC%9A%E6%8A%A5%E9%94%99)。
 
-### 2.4 论文投稿相关总结
+### 2.4 VSCode安装语法检查插件LTeX相关问题
+为了能检查论文中的语法问题，考虑安装LTeX插件，但在线安装失败，不得不进行离线安装（[VScode插件LTeX的离线安装](https://zhuanlan.zhihu.com/p/694157732?share_code=CupUN4uDJ1k4&utm_psn=2020162389526463658)）。安装完毕后打开又报错：Could not run ltex-ls with Java，通过经验贴[Windows下VS Code使用LTeX语法检查报错](https://blog.csdn.net/zcdtls/article/details/148687904)解决。
+
+### 2.5 LaTex项目文件组成
+Elsevier：通常有一个elsarticle.dtx文件，一个elsarticle.ins文件和一个elsarticle-num.bst文件，分别定义了文档格式，负责提取并安装cls文件和定义参考文献风格。
+
+IEEE：通常有一个IEEEtran.cls文件和一个IEEEtran.bst文件，分别定义了文档格式和参考文献风格，如果想进一步改变参考文献规范性，还可引入IEEEabrv.bib，IEEEfull.bib等文件。
+
+### 2.6 论文投稿相关总结
 IEEE：可使用任一作者的账号投稿，待到稿件正式提交后，系统按照投稿时填写的各作者邮箱自动创建老mc系统的账号，此时所有共同作者均可以在新老系统上看到稿件详情（登录账号的邮箱必须是投稿时填写的邮箱）。投稿账号的邮箱能接收到新提交的创建通知，和其他共同作者一起都能接收到任意阶段的提交通知和decision letter，接收邮箱为投稿时填写的各邮箱。
 
 Elsevier：需使用通讯作者的账号提交，待到稿件正式提交后，所有共同作者均可收到身份确认链接（在投稿系统上填写的邮箱地址接收），然后可用任一账号确认后看到稿件详情。通讯作者邮箱（不确定是投稿时所填邮箱还是投稿账号绑定邮箱）能接收到新提交的创建通知、各阶段提交通知和decision letter，而其他共同作者只会接收到新稿件首次提交时的身份确认通知和录用后的right通知，各阶段的decision letter和返修提交通知均无法收到。
@@ -57,12 +70,12 @@ Elsevier：需使用通讯作者的账号提交，待到稿件正式提交后，
 
 2）重点研发计划：Ministry of Science and Technology of the People's Republic of China
 
-### 2.5 Pycharm与VSCode对比
+### 2.7 Pycharm与VSCode对比
 Pycharm：Debug功能好，看变量方便；建立索引快，find in usage等；带参运行方便；远程ssh虽然映射很乱（本地不同的项目会映射到远程服务器的同一个文件夹），但可以和本地保持同步。
 
 VSCode：轻量，开源，远程ssh直接操控服务器，更适合AI Agent功能，虽然少了很多功能（比如自动格式化），但是都可以通过安装扩展解决。
 
-### 2.6 VSCode最新版本无法连接SSH服务器
+### 2.8 VSCode最新版本无法连接SSH服务器
 由于pycharm太过笨重了，尽管具有优越的debug功能，但还是决定放弃pycharm转用VSCode。然而发现VSCode在连接实验室服务器时弹出“远程主机不满足运行VSCode服务器的先决条件”，经上网搜索资料得知，1.85.2之后的VSCode版本已经要求glibc>=2.28。解决方法为：
 
 1）直接把高版本的VSCode降到1.85，但是就无法使用写代码的AI Agent功能了
@@ -76,3 +89,4 @@ VSCode：轻量，开源，远程ssh直接操控服务器，更适合AI Agent功
 [GitHub - MikeWang000000/vscode-server-centos7: Run the latest vscode-server on RHEL/CentOS 7!](https://github.com/MikeWang000000/vscode-server-centos7)
 
 3）安装便携版的1.85版本，此时本地有两个版本的VSCode共存，一个主写代码，一个主跑实验。目前只得这样凑合使用。
+
