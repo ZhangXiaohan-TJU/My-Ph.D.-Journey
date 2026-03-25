@@ -37,7 +37,7 @@
 
 1）直接把高版本的VSCode降到1.85，但是就无法使用写代码的AI Agent功能了
 
-2）官网给出了patchelf方法，结合一些网友的经验贴尝试3次（miniforge安装和homebrew安装），但仍然失败，只得放弃。三个经验贴的地址为：
+2）官网给出了patchelf方法，结合一些网友的经验贴尝试3次（github包，miniforge安装和homebrew安装），但仍然失败，只得放弃。三个经验贴的地址为：
 
 [“远程主机不满足运行 VS Code 服务器的先决条件”解决 - Undefined443 - 博客园](https://www.cnblogs.com/Undefined443/p/18830733)
 
