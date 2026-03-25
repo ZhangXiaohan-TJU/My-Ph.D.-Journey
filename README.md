@@ -1,4 +1,12 @@
 # My-Ph.D.-Journal
+## 目录
+- [一、我的成果](#一我的成果)
+  - [1.1 已发表论文](#11-已发表论文)
+  - [1.2 申请专利](#12-申请专利)
+- [二、做实验&写论文遇到的一些问题](#二做实验写论文遇到的一些问题)
+  - [2.1 torch版本-cuda版本-驱动版本对应问题](#21-torch版本-cuda版本-驱动版本对应问题)
+  - [2.2 同样的latex项目，在不同电脑上编译出来结果不同](#22-同样的latex项目在不同电脑上编译出来结果不同)
+  - [2.3 VSCode最新版本无法连接SSH服务器](#23-vscode最新版本无法连接ssh服务器)
 ## 一、我的成果
 ### 1.1 已发表论文
 1. **Zhang X**, Wang H, Wang C, et al. [MoMD Transformer: adaptive multi-modal fault diagnosis via knowledge transfer with vibration-current signals](https://www.sciencedirect.com/science/article/pii/S1566253525011418)[J/OL]. _Information Fusion_, 2026, 130: 104079. （SCI中科院1区TOP，IF=15.5）
