@@ -38,7 +38,7 @@
 ### 2.2 同样的LaTex项目，在不同电脑上编译出来结果不同
 主要体现在参考文献的字体大小不一致（对比如下图），经Gemini的分析得知，这和texlive的版本有关。而latex可以在线选择不同版本的texlive进行编译，发现最新的texlive 2025会把参考文献字体编译的特别大，之后统一了两台电脑的texlive版本，问题解决。
 
-<img src="https://cdn.nlark.com/yuque/0/2026/png/63764939/1774405232179-204bb1fa-59d9-4c84-b6ea-326a6fbed2a6.png" width="344" title="" crop="0,0,1,1" id="W4xBw" class="ne-image"><img src="https://cdn.nlark.com/yuque/0/2026/png/63764939/1774405277966-4fd43fc1-9e39-4927-8314-a9063573158a.png" width="336" title="" crop="0,0,1,1" id="ue8cbc721" class="ne-image">
+<img src="textlive2022.png" width="224" title="" crop="0,0,1,1" id="W4xBw" class="ne-image"> <img src="textlive2025.png" width="224" title="" crop="0,0,1,1" id="ue8cbc721" class="ne-image">
 
 ### 2.3 VSCode更改LaTex编译输出路径后，执行bibtex命令会报错
 为了LaTex项目文件夹的整洁与管理方便，选择更改默认设置（[VsCode配置Latex编译环境并且指定输出目录_latex编译输出-CSDN博客](https://blog.csdn.net/lyxichigoichie/article/details/125961850?spm=1001.2014.3001.5506)），编译时将中间文件输出都到"./Build"文件夹，但是有关bibtex的执行都会报错，最终上网寻找到解决方案：[bibtex因openout_any=p拒绝编译](https://hyliang96.github.io/posts/b812214a/#:~:text=%E8%8B%A5%E7%BC%96%E8%AF%91%E6%97%B6,%E4%BC%9A%E6%8A%A5%E9%94%99)。
