@@ -36,7 +36,7 @@
 25年秋季学期，因为某些现在已想不起来的原因想要使用高版本的torch，发现实验室服务器的cuda版本太低不支持，尝试升级cuda版本，又发现新的cuda版本和显卡驱动版本也不匹配，服务器一度崩溃，经过n次的重置环境变量，以及重启主机，得以修复。再也不敢轻易升级服务器一些软件的版本。
 
 ### 2.2 同样的LaTex项目，在不同电脑上编译出来结果不同
-主要体现在参考文献的字体大小不一致（对比如下图），经Gemini的分析得知，这和texlive的版本有关。而latex可以在线选择不同版本的texlive进行编译，发现最新的texlive 2025会把参考文献字体编译的特别大，之后统一了两台电脑的texlive版本，问题解决。
+主要体现在参考文献的字体大小不一致（对比如下图），经Gemini的分析得知，这和texlive的版本有关。而overleaf可以在线选择不同版本的texlive进行编译，发现最新的texlive 2025会把参考文献字体编译的特别大，之后统一了两台电脑的texlive版本，问题解决。
 
 <img src="textlive2022.png" width="224" title="" crop="0,0,1,1" id="W4xBw" class="ne-image"> <img src="textlive2025.png" width="224" title="" crop="0,0,1,1" id="ue8cbc721" class="ne-image">
 
